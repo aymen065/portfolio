@@ -134,6 +134,7 @@ section{
   .main-container::-webkit-scrollbar-thumb:hover {
     background-color: #077b32; 
   }
+  
 
 .main-container .image{
     width: 30rem;

@@ -1,0 +1,34 @@
+<section class="experience-section">
+    <h1 class="experience-title" data-aos="fade-right" data-aos-duration="1500"><span style="color: white;">My </span>Experience</h1>
+    <div class="experience-container" data-aos="fade-up" data-aos-duration="1500">
+      <div class="experience-card" *ngFor="let exp of experiences">
+        <div class="experience-content">
+          <h3>{{ exp.title }}</h3>
+          <p class="company">{{ exp.company }}</p>
+          <p class="date">{{ exp.date }}</p>
+          <p class="description">{{ exp.description }}</p>
+        </div>
+        <div class="experience-back">
+            <h2 style="color: white;">Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-item" *ngFor="let tool of exp.tools" >
+                    <i *ngIf="tool =='Angular'" class="fab fa-angular"></i>
+                    <i *ngIf="tool =='Spring Boot'" class="fab fa-java"></i>
+                    <i *ngIf="tool =='Hyper-V'" class="fas fa-server"></i>
+                    <i *ngIf="tool =='Docker'" class="fab fa-docker"></i>
+                    <i *ngIf="tool =='Jenkins'" class="fab fa-jenkins"></i>
+                    <i *ngIf="tool =='MySQL' || tool == 'SQL Server'" class="fas fa-database"></i>
+                    <p>{{ tool }}</p>
+                  </div>
+            </div>
+
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+  

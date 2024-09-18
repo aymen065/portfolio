@@ -21,6 +21,7 @@ import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PhoneComponent } from './phone/phone.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { PhoneComponent } from './phone/phone.component';
     EducationComponent,
     ContactComponent,
     PhoneComponent,
+    ExperienceComponent,
   ],
   imports: [
     BrowserModule,
