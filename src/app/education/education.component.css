@@ -1,0 +1,124 @@
+.education-section {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  .education-container::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .education-container::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 4px; 
+  }
+  
+  .education-container::-webkit-scrollbar-thumb:hover {
+    background-color: #077b32; 
+  }
+  h1 span{
+    color: #077b32;
+    text-shadow: 0  0 10px #077b32;
+}
+h1{
+    font-size: clamp(3rem, 1rem + 5vw, 1.8rem);
+    line-height: 4rem;
+    text-shadow: 0  0 10px white;
+    color: white;
+}
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 600px;
+    margin-top: 0;
+  overflow-y: auto;
+  }
+  
+  .education-item {
+    width: 30rem;
+    border: 1px solid #f9f9f934;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 10px;
+    text-align: center;
+    background-color: #f9f9f921;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .education-year {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #077b32;
+    margin-bottom: 15px;
+    text-shadow: 0  0 10px #077b32;
+  }
+  
+  .education-details {
+    font-size: 1rem;
+    color: #ffffff;
+  }
+  
+  .education-degree {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .education-institution {
+    font-style: italic;
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  .education-description {
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+
+  @media (max-width:1060px) {
+    h1{
+        font-size: clamp(3rem, 1rem + 5vw, 1.8rem);
+        color: white;
+    }
+      .education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-height: 600px;
+    margin-top: 3rem;
+  overflow-y: auto;
+  }
+
+}
+
+@media (max-width:641px) {
+    h1{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+        color: white;
+    }
+    .education-item {
+      width: 20rem;
+    }
+
+}
+  

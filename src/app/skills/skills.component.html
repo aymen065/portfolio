@@ -1,0 +1,16 @@
+<section>
+    <div class="main-container">
+        <div class="skills-container" data-aos="fade-up" data-aos-duration="1500">
+            <div  class="ticket" *ngFor="let image of images">
+                <div class="project">
+                    <div class="image-slider">
+                      <img [src]="image.url">
+                    </div>
+                    <h3>{{ image.name }}</h3>
+                </div>
+            </div>
+          </div>
+    </div>
+</section>
+
+  

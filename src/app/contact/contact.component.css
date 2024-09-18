@@ -1,0 +1,111 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 3rem;
+    max-height: 600px;
+    overflow-y: auto;
+  }
+  .contact-container::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  .contact-container::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 4px; 
+  }
+  
+  .contact-container::-webkit-scrollbar-thumb:hover {
+    background-color: #077b32; 
+  }
+  h1{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+h1 span{
+    color: #077b32;
+    text-shadow: 0 0 10px #077b32;
+}
+  
+  .map {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem;
+    
+  }
+  #map{
+    height: 31rem;
+    border-radius: 0.5rem;
+  }
+  
+  .contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #077b32;
+  }
+  
+  .contact-form h2 {
+    color: #077b32;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    text-shadow: 0  0 10px #077b32;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .contact-footer{
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 2rem;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #077b32;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .btn-primary {
+    background-color: #077b32;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #055a22;
+  }
+  
+  @media (max-width:440px) {
+    .map{
+        width: 23rem;
+        margin: 0.5rem;
+    }
+
+}
+@media (max-width:885) {
+    .map{
+        margin: 0.5rem;
+        margin-top:2rem ;
+    }
+
+
+
+}

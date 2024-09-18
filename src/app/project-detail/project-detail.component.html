@@ -1,0 +1,16 @@
+    <div class="project">
+        <h3 mat-dialog-title>{{ data.project.name }}</h3>
+        <div mat-dialog-content>
+          <div class="image-slider">
+            <img *ngFor="let image of data.project.images; let i = index"
+            [src]="image"
+            [class.active]="isActiveImage(i)"
+            alt="Screenshot of {{ data.project.name }}">
+          </div>
+          <p>{{data.project.description}}</p>
+          <b>Technologies : </b><span *ngFor="let tech of data.project.technologies">{{tech}}</span>
+        </div>
+        <div mat-dialog-actions class="modal-footer">
+          <button mat-button mat-dialog-close>Close</button>
+        </div>
+    </div>

@@ -1,0 +1,15 @@
+@media (max-width:641px) {
+    .typewriter{
+        line-height: 3rem;
+        height: 5rem;
+    }
+}
+@media (max-width:1300px) {
+    .typewriter{
+        line-height: 3rem;
+        height: 4rem;
+    }
+}
+.typewriter{
+    margin-bottom: 2rem;
+}

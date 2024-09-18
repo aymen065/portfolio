@@ -1,0 +1,27 @@
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+            Aymen <span>Chaabani</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a routerLink="home">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a routerLink="about">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a routerLink="education">Education</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a routerLink="skills">Skills</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a routerLink="projects">Portfolio</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600"><a routerLink="contact">Contact</a></div>
+    </div>
+    <i class="fa-solid fa-bars hamburg" (click)="hamburg()"></i>
+</div>
+    <div class="dropdown">
+        <div class="links">
+            <a routerLink="home">Home</a>
+            <a routerLink="about">About</a>
+            <a routerLink="education">Education</a>
+            <a routerLink="skills">Skills</a>
+            <a routerLink="projects">Portfolio</a>
+            <a routerLink="contact">Contact</a>
+            <i class="fa-solid fa-xmark cancel" (click)="cancel()"></i>
+        </div>
+    </div>
+</nav>
