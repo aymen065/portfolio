@@ -19,10 +19,11 @@
     text-shadow: 0  0 10px #077b32;
 }
 h1{
-    font-size: clamp(3rem, 1rem + 5vw, 1.8rem);
-    line-height: 4rem;
+    font-size: clamp(4rem, 1rem + 5vw, 1.8rem);
+    line-height: 5rem;
     text-shadow: 0  0 10px white;
     color: white;
+    margin-left: 4rem;
 }
   
   .section-title {
@@ -97,6 +98,7 @@ h1{
     h1{
         font-size: clamp(3rem, 1rem + 5vw, 1.8rem);
         color: white;
+        margin-left: 0;
     }
       .education-container {
     display: flex;
@@ -115,6 +117,7 @@ h1{
         padding-bottom: 0;
         font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
         color: white;
+        margin-left: 0;
     }
     .education-item {
       width: 20rem;

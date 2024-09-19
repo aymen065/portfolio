@@ -84,7 +84,7 @@ nav{
 }
 
 .dropdown{
-    z-index: 100;
+    z-index: 9999;
     position: absolute;
     top: 0;
     transform: translateY(-500px);
@@ -103,6 +103,7 @@ nav{
     padding: 15px 0;
     align-items: center;
     transition: 0.2s linear;
+    z-index: 9999;
 }
 
 .dropdown .links a:hover{

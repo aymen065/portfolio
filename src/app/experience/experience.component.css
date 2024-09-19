@@ -1,10 +1,10 @@
 .experience-section {
-    background-color: #0f0f0f;
     color: white;
     padding: 4rem 2rem;
     perspective: 1000px; 
     max-height: 700px;
     overflow-y: auto;
+    z-index: 1;
   }
   .experience-section ::-webkit-scrollbar {
     width: 8px; 
@@ -44,6 +44,7 @@
     position: relative;
     height: 300px;
     transform-origin: center;
+    z-index: 1;
   }
   
   .experience-card:hover {
