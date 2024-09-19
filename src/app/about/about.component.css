@@ -110,6 +110,7 @@ h1{
 }
 
 @media (min-width:884px) {
+
   .stage-cube-cont {
     width: 50%;
     height: 100%;
@@ -119,4 +120,7 @@ h1{
     position: relative;
 
   }
+
+
+
 }
