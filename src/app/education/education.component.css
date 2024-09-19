@@ -2,18 +2,7 @@
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   }
-  .education-container::-webkit-scrollbar {
-    width: 8px; 
-  }
-  
-  .education-container::-webkit-scrollbar-thumb {
-    background-color: #ccc; 
-    border-radius: 4px; 
-  }
-  
-  .education-container::-webkit-scrollbar-thumb:hover {
-    background-color: #077b32; 
-  }
+
   h1 span{
     color: #077b32;
     text-shadow: 0  0 10px #077b32;
@@ -40,7 +29,7 @@ h1{
     justify-content: space-around;
     max-height: 700px;
     margin-top: 0;
-  overflow-y: auto;
+    padding-top: 3rem;
   padding-bottom: 7rem;
   }
   
@@ -106,7 +95,6 @@ h1{
     flex-wrap: wrap;
     justify-content: space-around;
     max-height: 700px;
-    margin-top: 2rem;
   overflow-y: auto;
   }
 
@@ -119,6 +107,9 @@ h1{
         font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
         color: white;
         margin-left: 0;
+    }
+    .education-container{
+      padding-top: 0;
     }
     .education-item {
       width: 20rem;
