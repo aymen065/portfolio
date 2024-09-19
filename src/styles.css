@@ -300,9 +300,9 @@ section{
 @media (max-width:440px){
     .main-container .image{
         width: 50%;
-        height: 17rem;
+        height: 21rem;
         margin-top: 2rem;
-        
+        border-radius: 50%;
     }
 
     .main-container .cube{
