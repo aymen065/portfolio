@@ -41,6 +41,7 @@ h1{
     max-height: 700px;
     margin-top: 0;
   overflow-y: auto;
+  padding-bottom: 7rem;
   }
   
   .education-item {
