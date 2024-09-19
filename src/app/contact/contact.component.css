@@ -101,7 +101,7 @@ h1 span{
 
 }
 .contact-form{
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 @media (max-width:885) {
   .contact-container {
@@ -110,6 +110,7 @@ h1 span{
     .map{
         margin: 0.5rem;
         margin-top:2rem ;
+        
     }
 
 
