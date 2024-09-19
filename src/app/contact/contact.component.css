@@ -2,9 +2,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-top: 3rem;
     max-height: 600px;
     overflow-y: auto;
+    margin-top: 3rem;
   }
   .contact-container::-webkit-scrollbar {
     width: 8px; 
@@ -32,11 +32,11 @@ h1 span{
   .map {
     width: 100%;
     max-width: 800px;
-    margin: 2rem;
+    
     
   }
   #map{
-    height: 31rem;
+    height: 32rem;
     border-radius: 0.5rem;
   }
   
@@ -100,7 +100,13 @@ h1 span{
     }
 
 }
+.contact-form{
+  margin-bottom: 3rem;
+}
 @media (max-width:885) {
+  .contact-container {
+    margin-top: 0;
+  }
     .map{
         margin: 0.5rem;
         margin-top:2rem ;
