@@ -16,7 +16,8 @@ const routes: Routes = [
   { path: 'projects', component: PortfolioComponent },
   { path: 'education', component: EducationComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'experience', component: ExperienceComponent }
+  { path: 'experience', component: ExperienceComponent },
+  { path: '**', redirectTo: '/home' }
 
 ];
 
