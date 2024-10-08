@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { PhoneComponent } from '../phone/phone.component';
 import { MatDialog } from '@angular/material/dialog';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import emailjs from 'emailjs-com';
+
 
 @Component({
   selector: 'app-home',
@@ -13,12 +16,27 @@ export class HomeComponent implements OnInit {
   textIndex: number = 0;
   charcterIndex: number = 0;
   textElements: HTMLElement | null = null;
+  seenform: FormGroup;
 
-  constructor(public dialog: MatDialog) { }
+  constructor(private fb: FormBuilder,public dialog: MatDialog) {
+    this.seenform = this.fb.group({
+      name: ['portfolio', Validators.required],
+      email: ['aymen.chaabani@etudiant-fst.utm.tn', [Validators.required, Validators.email]],
+      subject: ['you got one view', Validators.required],
+      message: ['your portfolio has been viewed', Validators.required]
+    });
+  }
 
   ngOnInit(): void {
     this.textElements = document.querySelector(".typewriter-text");
     this.typeWriter();
+    if (!localStorage.getItem('emailSent')) {
+      const formData = this.seenform.value;
+      emailjs.send('gmail', 'template_exx4pat', formData, 'DpPdpxQ--5M-syP4t');
+      localStorage.setItem('emailSent', 'true');
+
+    }
+    
   }
 
 

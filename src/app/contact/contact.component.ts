@@ -13,7 +13,7 @@ import emailjs from 'emailjs-com';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private http: HttpClient) {
+  constructor(private fb: FormBuilder) {
     this.contactForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
